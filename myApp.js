@@ -22,11 +22,9 @@ const createAndSavePerson = (done) => {
 
   user.save((err, data) => {
     if (err) {
-      console.log(err)
+      return console.log(err)
     } 
-    else {
-      done(null, data)
-    }
+    done(null, data)
   })
 };
 
